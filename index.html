@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -7,17 +7,24 @@
 </head>
 
 <body>
+    <table>
+        <tr>
+            <td>So thu nhat</td>
+            <td><input type="text" id=sothunhat></td>
+        </tr>
+        <tr>
+            <td>So thu hai</td>
+            <td><input type="text" id=sothuhai></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" onclick="" value="Tong 2 so tren"></td>
+        </tr>
+    </table>
     <script>
-        let sothunhat = prompt("nhap so thu nhat di bro");
-        let sothuhai = prompt("nhap so thu hai di bro");
-        let tong = sothunhat + sothuhai
-        alert("tong hai so la", tong);
+        function tong(){
+            let sothunhat = document.getElementById("sothunhat").Value
 
-
-
-
-
-
+        }
 
     </script>
 
