@@ -10,20 +10,23 @@
     <table>
         <tr>
             <td>So thu nhat</td>
-            <td><input type="text" id=sothunhat></td>
+            <td><input type="text" id="sothunhat"></td>
         </tr>
         <tr>
             <td>So thu hai</td>
-            <td><input type="text" id=sothuhai></td>
+            <td><input type="text" id="sothuhai"></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="button" onclick="" value="Tong 2 so tren"></td>
+            <td colspan="2"><input type="button" onclick="tong()" value="Tinh tong"></td>
         </tr>
     </table>
     <script>
         function tong(){
-            let sothunhat = document.getElementById("sothunhat").Value
-
+            let sothunhat = document.getElementById("sothunhat").value
+            let sothuhai = document.getElementById("sothuhai").value
+            let tong = parseInt(sothunhat) + parseInt(sothuhai)
+            document
+            alert("tong 2 so la: " + tong)         
         }
 
     </script>
